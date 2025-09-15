@@ -368,3 +368,99 @@ footer {
   padding: 10px 0;
   font-size: 14px;
 }
+/*** Menu responsive ***/
+.menu_toggle {
+  display: none;
+}
+/*************** RESPONSIVE *************/
+@media screen and (max-width: 682px) {
+  header {
+    padding: 0 10px;
+  }
+
+  header .menu {
+    display: none;
+  }
+  #home {
+    padding: 0 10%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #home .left,
+  #home .right {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 50px;
+    width: 60%;
+  }
+  .images li {
+    width: 100%;
+  }
+  #services {
+    padding: 0 10px;
+  }
+  .service {
+    width: 100%;
+  }
+
+  #contact {
+    height: auto;
+  }
+
+  .localisation_contact_div {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .localisation {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .localisation_contact_div .form_contact {
+    width: 100%;
+  }
+
+  .menu_toggle {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .menu_toggle span {
+    width: 35px;
+    background-color: #ea1f33;
+    height: 5px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .menu_toggle::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 5px;
+    background-color: #ea1f33;
+    transform: translateY(10px);
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+
+  .menu_toggle::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 5px;
+    background-color: #ea1f33;
+    transform: translateY(-10px);
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+}
