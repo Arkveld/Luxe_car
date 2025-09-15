@@ -74,6 +74,8 @@ header button {
   padding: 5px 25px;
 }
 
+/******** Section accueil ******/
+
 #home {
   margin-top: 50px;
   height: calc(100vh - 50px);
@@ -135,6 +137,8 @@ header button {
 #home .right img {
   width: 100%;
 }
+
+/****** Section véhicule ************/
 
 #cars {
   display: flex;
@@ -224,4 +228,62 @@ header button {
   color: #fff;
   padding: 5px 20px;
   font-size: 15px;
+}
+
+/******** Section services ************/
+
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.list_services {
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px;
+}
+
+.service i {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ea1f33;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.service h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 12px;
+}
+
+.service a {
+  margin-top: 10px;
+  color: #ea1f33;
+  padding: 5px 20px;
+  border: 1px solid #ea1f33;
+  font-size: 12px;
 }
