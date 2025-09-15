@@ -381,10 +381,31 @@ footer {
   header .menu {
     display: none;
   }
+
+  /***Menu responsive ***/
+  header .menu.responsive {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
   #home {
     padding: 0 10%;
     justify-content: center;
     flex-direction: column;
+  }
+
+  #home h1 {
+    margin-top: 100px;
   }
 
   #home .left,
@@ -442,6 +463,9 @@ footer {
     border-radius: 6px;
     transition: 0.5s;
   }
+  .menu_toggle span.active {
+    width: 0px;
+  }
   .menu_toggle::before {
     position: absolute;
     content: "";
@@ -453,6 +477,11 @@ footer {
     transition: 0.5s;
   }
 
+  .menu_toggle.active::before {
+    width: 28px;
+    transform: rotate(45deg);
+  }
+
   .menu_toggle::after {
     position: absolute;
     content: "";
@@ -462,5 +491,10 @@ footer {
     transform: translateY(-10px);
     border-radius: 6px;
     transition: 0.5s;
+  }
+
+  .menu_toggle.active::after {
+    width: 28px;
+    transform: rotate(-45deg);
   }
 }
